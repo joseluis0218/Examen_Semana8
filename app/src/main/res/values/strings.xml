@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Examen_Semana8</string>
+    <string name="main_usuario_input">Ingrese su usuario</string>
+    <string name="main_contraseña_input">Ingrese su contraseña</string>
+    <string name="main_ingresar_button">Ingresar</string>
+    <string name="main_registrar_button">Registrar</string>
+</resources>
