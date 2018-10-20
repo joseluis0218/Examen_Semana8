@@ -17,6 +17,7 @@
         android:layout_height="wrap_content"
         android:text="Nombre de Usuario"/>
     <EditText
+        android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
@@ -24,6 +25,7 @@
         android:layout_height="wrap_content"
         android:text="Nombres Completos"/>
     <EditText
+        android:id="@+id/fullname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
@@ -31,6 +33,7 @@
         android:layout_height="wrap_content"
         android:text="Correo Electrónico"/>
     <EditText
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
@@ -38,12 +41,20 @@
         android:layout_height="wrap_content"
         android:text="Contraseña"/>
     <EditText
+        android:id="@+id/password"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="250dp"/>
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/colorAccent"
+        android:onClick="callRegister"
         android:text="Registrar"/>
+    </RelativeLayout>
 
 </LinearLayout>

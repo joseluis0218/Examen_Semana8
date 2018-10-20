@@ -8,14 +8,14 @@
     android:layout_margin="40dp"
     tools:context=".MainActivity">
 
+
     <ImageView
         android:id="@+id/imagen_login"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginBottom="50dp"
-        android:src="@drawable/ic_launcher_background"
-        />
+        android:src="@drawable/img_notas"/>
     <EditText
         android:id="@+id/usuario_input"
         android:layout_width="match_parent"
@@ -28,18 +28,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/main_contraseña_input"
-        android:layout_marginBottom="50dp"
+        android:inputType="textPassword"
+        android:layout_marginBottom="40dp"
         />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
     <Button
-        android:id="@+id/ingresar_boton"
+        android:id="@+id/ingresar_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/colorAccent"
         android:text="@string/main_ingresar_button" />
+
     <Button
         android:id="@+id/registrar_boton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/ingresar_button"
         android:text="@string/main_registrar_button"
 />
+    </RelativeLayout>
 </LinearLayout>

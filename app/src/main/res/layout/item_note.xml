@@ -20,18 +20,23 @@
             android:id="@+id/title_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:maxLines="1"
-            android:ellipsize="end"
-            tools:text="Título de la nota"/>
+            tools:text="Título de la nota" />
 
-        <TextView
+
+        <com.github.curioustechizen.ago.RelativeTimeTextView
+            android:id="@+id/date_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:text="18/10/2018"/>
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="18 de Agosto"
+            app:relative_time_prefix="Creado "/>
         <TextView
             android:id="@+id/content_text"
             android:layout_width="match_parent"
@@ -39,12 +44,46 @@
             android:layout_below="@+id/title_text"
             android:layout_marginBottom="8dp"
             android:textSize="16sp"
-            android:maxLines="3"
+            tools:text="Contenido de la nota ..." />
+
+        <CheckBox
+            android:id="@+id/favorite_star"
+            style="?android:attr/starStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/content_text"
+            android:layout_marginStart="100dp"
             android:ellipsize="end"
-            tools:text="Contenido de la nota ..."/>
+            android:maxLines="3"
+            android:textSize="16sp" />
 
+        <TextView
+            android:id="@+id/favorito_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/favorite_star"
+            android:layout_toEndOf="@+id/favorite_star"
+            android:textSize="16sp"
+            tools:text="Favoritos" />
+        <ImageButton
+            android:id="@+id/archivar_icon"
+            android:src="@drawable/package_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/content_text"
+            android:layout_toEndOf="@+id/favorito_text"
+            android:layout_marginStart="20dp"
+            android:ellipsize="end"
+            android:maxLines="3"/>
 
-
+        <TextView
+            android:id="@+id/archivar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/favorite_star"
+            android:layout_toEndOf="@+id/archivar_icon"
+            android:textSize="16sp"
+            tools:text="Archivar" />
 
 
     </RelativeLayout>
