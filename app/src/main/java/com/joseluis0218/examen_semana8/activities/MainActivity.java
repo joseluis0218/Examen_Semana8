@@ -1,4 +1,4 @@
-package com.joseluis0218.examen_semana8;
+package com.joseluis0218.examen_semana8.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.joseluis0218.examen_semana8.R;
+import com.joseluis0218.examen_semana8.RegistroUsuarioActivity;
 import com.joseluis0218.examen_semana8.models.User;
 import com.orm.SugarRecord;
 

@@ -1,4 +1,4 @@
-package com.joseluis0218.examen_semana8;
+package com.joseluis0218.examen_semana8.repository;
 
 import com.joseluis0218.examen_semana8.models.User;
 import com.orm.SugarRecord;

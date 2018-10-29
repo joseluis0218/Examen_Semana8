@@ -15,7 +15,7 @@
             android:value="examen_semana8.db" />
         <meta-data
             android:name="VERSION"
-            android:value="1" />
+            android:value="2" />
         <meta-data
             android:name="QUERY_LOG"
             android:value="true" />
@@ -23,7 +23,7 @@
             android:name="DOMAIN_PACKAGE_NAME"
             android:value="com.joseluis0218.examen_semana8.models" />
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,9 +31,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegistroUsuarioActivity" />
-        <activity android:name=".RegistroNotasActivity" />
-        <activity android:name=".NotasActivity" />
-        <activity android:name=".NotasDetallesActivity"></activity>
+        <activity android:name=".activities.RegistroNotasActivity" />
+        <activity android:name=".activities.NotasActivity" />
+        <activity android:name=".activities.NotasDetallesActivity" />
     </application>
 
 </manifest>

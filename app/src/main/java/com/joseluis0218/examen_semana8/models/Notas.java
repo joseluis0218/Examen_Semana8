@@ -9,16 +9,17 @@ public class Notas {
     private String title;
     private String content;
     private Date date;
-    private Boolean state;
-
+    private Boolean favorite;
+    private Boolean archivate;
     public Notas() {
     }
 
-    public Notas(String title, String content, Date date, Boolean state) {
+    public Notas(String title, String content, Date date, Boolean favorite, Boolean archivate) {
         this.title = title;
         this.content = content;
         this.date = date;
-        this.state = state;
+        this.favorite = favorite;
+        this.archivate = archivate;
     }
 
     public Long getId() {
@@ -54,12 +55,32 @@ public class Notas {
         this.date = date;
     }
 
-    public Boolean getState() {
-        return state;
+    public Boolean getFavorite() {
+        return favorite;
     }
 
-    public void setState(Boolean state) {
-        this.state = state;
+    public void setFavorite(Boolean favorite) {
+        this.favorite = favorite;
+    }
+
+    public Boolean getArchivate() {
+        return archivate;
+    }
+
+    public void setArchivate(Boolean archivate) {
+        this.archivate = archivate;
+    }
+
+    @Override
+    public String toString() {
+        return "Note{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                ", date=" + date +
+                ", favorite=" + favorite +
+                ", archivate=" + archivate +
+                '}';
     }
 }
 

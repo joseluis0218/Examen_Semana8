@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.joseluis0218.examen_semana8.activities.MainActivity;
+import com.joseluis0218.examen_semana8.repository.RepositorioUsuario;
+
 public class RegistroUsuarioActivity extends AppCompatActivity {
     private EditText fullnameInput;
     private EditText emailInput;

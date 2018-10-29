@@ -32,11 +32,21 @@
             android:id="@+id/date_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
+            android:layout_toStartOf="@+id/menu_button"
             android:textSize="16sp"
             android:textStyle="bold"
             tools:text="18 de Agosto"
             app:relative_time_prefix="Creado "/>
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_dots"
+            android:background="@null"
+            android:layout_alignParentEnd="true"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:layout_marginBottom="8dp"/>
         <TextView
             android:id="@+id/content_text"
             android:layout_width="match_parent"
@@ -52,8 +62,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/content_text"
-            android:layout_marginStart="100dp"
             android:ellipsize="end"
+            android:layout_marginStart="100dp"
             android:maxLines="3"
             android:textSize="16sp" />
 
@@ -65,23 +75,23 @@
             android:layout_toEndOf="@+id/favorite_star"
             android:textSize="16sp"
             tools:text="Favoritos" />
-        <ImageButton
+        <CheckBox
             android:id="@+id/archivar_icon"
-            android:src="@drawable/package_down"
+            style="?android:attr/starStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/content_text"
-            android:layout_toEndOf="@+id/favorito_text"
-            android:layout_marginStart="20dp"
             android:ellipsize="end"
-            android:maxLines="3"/>
+            android:layout_marginStart="200dp"
+            android:maxLines="3"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/archivar_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/favorite_star"
             android:layout_toEndOf="@+id/archivar_icon"
+            android:layout_alignBottom="@+id/archivar_icon"
             android:textSize="16sp"
             tools:text="Archivar" />
 

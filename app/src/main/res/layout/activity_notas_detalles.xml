@@ -33,6 +33,13 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 style="?android:attr/starStyle"
+                android:layout_toStartOf="@+id/archivar_icon"
+                android:checked="true"
+                android:clickable="false"/>
+            <CheckBox android:id="@+id/archivar_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                style="?android:attr/starStyle"
                 android:layout_alignParentEnd="true"
                 android:checked="true"
                 android:clickable="false"/>
